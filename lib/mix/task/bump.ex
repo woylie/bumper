@@ -36,10 +36,16 @@ defmodule Mix.Tasks.Bump do
     |> Version.parse!()
   end
 
-  defp bump_version(current_version, segment) do
-    current_version
-    |> Map.put(segment, Map.fetch!(current_version, segment) + 1)
-    |> Version.to_string()
+  defp bump_version(%{major: major} = current_version, :major) do
+    Version.to_string(%{current_version | major: major + 1, minor: 0, patch: 0})
+  end
+
+  defp bump_version(%{minor: minor} = current_version, :minor) do
+    Version.to_string(%{current_version | minor: minor + 1, patch: 0})
+  end
+
+  defp bump_version(%{patch: patch} = current_version, :patch) do
+    Version.to_string(%{current_version | patch: patch + 1})
   end
 
   defp update_changelog(changelog, new_version) do
