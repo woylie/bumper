@@ -32,3 +32,8 @@ mix bump patch
 mix bump minor
 mix bump major
 ```
+
+## Alternative
+
+Use the fish function [bump.fish](https://github.com/woylie/bump.fish) to do the
+same.
