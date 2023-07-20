@@ -13,6 +13,18 @@ at once.
 - The changelog uses the [keep a changelog](https://keepachangelog.com) format
   and has an `## Unreleased` header.
 
+## Installation
+
+Add `:bumper` as a mix dependency.
+
+```elixir
+def deps do
+  [
+    {:bumper, github: "woylie/bumper"}
+  ]
+end
+```
+
 ## Usage
 
 ```bash
