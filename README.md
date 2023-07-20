@@ -7,7 +7,7 @@ at once.
 ## Assumptions
 
 - The version in `mix.exs` is assigned to a module attribute (e.g.
-  `@version 0.1.0`).
+  `@version "0.1.0"`).
 - `README.md` has installation instructions for adding the mix dependency
   (e.g. `{:my_library, "~> 0.1.0}`).
 - The changelog uses the [keep a changelog](https://keepachangelog.com) format
