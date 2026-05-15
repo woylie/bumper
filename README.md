@@ -4,6 +4,8 @@ Dirty little mix task that saves you 5 seconds of your time by bumping the
 version of an Elixir project in `mix.exs`, `README.md` and `CHANGELOG.md` all
 at once.
 
+Moved to https://codeberg.org/woylie/bumper.
+
 ## Assumptions
 
 - The version in `mix.exs` is assigned to a module attribute (e.g.
